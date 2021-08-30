@@ -190,10 +190,10 @@ You should see a line like ``2020-06-04 02:08:39,212 - __main__ - INFO - 8``, wh
 Fetching Stats
 --------------
 To fetch stats, simply message the bot, either inside the group being logged, or in a direct message, using the
-``/stats`` command.
-``/stats`` with no arguments prints the table of most active users and other statistics are available through various
+``/data`` command.
+``/data`` with no arguments prints the table of most active users and other statistics are available through various
 subcommands.
-All commands are documented and the built in help can be displayed with ``/stats -h`` or ``stats <subcommand> -h``.
+All commands are documented and the built in help can be displayed with ``/data -h`` or ``data <subcommand> -h``.
 
 Most commands have optional arguments that change the behaviour of the output.
 Nearly all have:
@@ -212,7 +212,7 @@ Sample outputs of each available subcommand follow.
 
 counts
 ------
-``/stats counts`` returns a list of the most active users in the group.
+``/data counts`` returns a list of the most active users in the group.
 
 .. code::
 
@@ -226,42 +226,42 @@ counts
 
 hours
 -----
-``/stats hours`` returns a plot of message frequency for the hours of the day.
+``/data hours`` returns a plot of message frequency for the hours of the day.
 
 .. image:: examples/hours.png
    :alt: Example of hours plot
 
 days
 ----
-``/stats days`` returns a plot of message frequency for the days of the week.
+``/data days`` returns a plot of message frequency for the days of the week.
 
 .. image:: examples/days.png
    :alt: Example of days plot
 
 week
 ----
-``/stats week`` returns a plot of total messages over the data period by day of week and hour of day.
+``/data week`` returns a plot of total messages over the data period by day of week and hour of day.
 
 .. image:: examples/week.png
    :alt: Example of week plot
 
 history
 -------
-``/stats history`` returns a plot of messages versus date.
+``/data history`` returns a plot of messages versus date.
 
 .. image:: examples/history.png
    :alt: Example of history plot
 
 titles
 ------
-``/stats titles`` returns a plot of group titles over time.
+``/data titles`` returns a plot of group titles over time.
 
 .. image:: examples/titles.png
    :alt: Example of title history plot
 
 user
 ----
-``/stats user`` returns basic statistics for the user.
+``/data user`` returns basic statistics for the user.
 
 .. code-block::
 
@@ -275,7 +275,7 @@ user
 
 corr
 ----
-``/stats corr`` returns a list of users with the highest and lowest message time correlations with the requesting user.
+``/data corr`` returns a list of users with the highest and lowest message time correlations with the requesting user.
 
 .. code::
 
@@ -296,7 +296,7 @@ corr
 
 delta
 -----
-``/stats delta`` returns a list of users with the shortest differences in message times with the requesting user.
+``/data delta`` returns a list of users with the shortest differences in message times with the requesting user.
 
 .. code::
 
@@ -309,7 +309,7 @@ delta
 
 types
 -----
-``/stats types`` returns a table of messages by type, comparing the requesting user with the full group.
+``/data types`` returns a table of messages by type, comparing the requesting user with the full group.
 
 .. code::
 
@@ -330,7 +330,7 @@ types
 
 words
 -----
-``/stats words`` returns a table of the most commonly used lexemes
+``/data words`` returns a table of the most commonly used lexemes
 
 .. code::
 
@@ -359,7 +359,7 @@ words
 
 random
 ------
-``/stats random`` prints a random message from the database.
+``/data random`` prints a random message from the database.
 
 ----------
 The Future

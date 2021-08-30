@@ -216,7 +216,7 @@ if __name__ == '__main__':
     store = PostgresStore(args.postgres_url)
     stats = StatsRunner(store.engine, tz=args.tz)
 
-    stats_handler = CommandHandler('stats', print_stats, filters=~Filters.update.edited_message, run_async=True)
+    stats_handler = CommandHandler('data', print_stats, filters=~Filters.update.edited_message, run_async=True)
     dispatcher.add_handler(stats_handler)
 
     chat_id_handler = CommandHandler('chatid', get_chatid, filters=~Filters.update.edited_message)
