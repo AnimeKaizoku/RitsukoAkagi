@@ -40,7 +40,7 @@ from .stats import StatsRunner, get_parser, HelpException
 warnings.filterwarnings("ignore")
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-                    level=logging.INFO)
+                    level=logging.CRITICAL)
 logger = logging.getLogger(__name__)
 
 stats = None
