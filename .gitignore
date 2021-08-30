@@ -1,3 +1,4 @@
 .idea
 dist
 telegram_stats_bot/__pycache__
+start.bat
